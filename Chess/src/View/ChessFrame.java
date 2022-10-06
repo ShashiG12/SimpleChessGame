@@ -51,7 +51,8 @@ public class ChessFrame extends JFrame implements ActionListener{
     int y = button.getY() / 40;
     if (count == 1) {
       this.firstClick = new Position(y, x);
-      //cgraphics.getGraphics().fillRect(x * 40, y * 40, 500, 40);
+      cgraphics.getGraphics().setColor(Color.YELLOW);
+      cgraphics.getGraphics().fillRect(x * 40, y * 40, 40, 40);
     }
     if (count == 2) {
       try {

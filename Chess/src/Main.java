@@ -35,11 +35,16 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Type t for console and g for GUI: ");
-    String input = sc.nextLine();
+//    Scanner sc = new Scanner(System.in);
+//    System.out.print("Type t for console and g for GUI: ");
+//    String input = sc.nextLine();
+//
+//    processInput(input);
 
-    processInput(input);
+    Board example1 = new Board();
+    example1.initializeBoard();
+    SimpleChessController controller1 = new SimpleChessController(example1);
+    controller1.playGUIGame();
 
   }
 
